@@ -51,6 +51,13 @@ app.listen(port, () => {
   console.log(`server is running in ${port}`);
 });
 
+// this is the change that is done in the website!! just example to check ci/cd
+app.get("/test", async (req, res) => {
+  res.json({
+    msg: "test was successful !",
+  });
+});
+
 // app.get("/test", async (req, res) => {
 //   const options = {
 //     method: "POST",
