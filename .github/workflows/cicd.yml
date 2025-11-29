@@ -38,7 +38,5 @@ jobs:
 
       - run: npm ci
       - run: npm run build --if-present
-
-      - name: Restart backend
-      - run: sudo pm2 restart backend # this will restart the backend in ec2 instance i.2 continous deployment 
+      - run: sudo pm2 restart backend 
   
