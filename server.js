@@ -54,7 +54,7 @@ app.listen(port, () => {
 // this is the change that is done in the website!! just example to check ci/cd
 app.get("/test", async (req, res) => {
   res.json({
-    msg: "update: test was successful !",
+    msg: "Final: test was successful !",
   });
 });
 
